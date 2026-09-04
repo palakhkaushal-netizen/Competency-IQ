@@ -1,1 +1,34 @@
-first project
+# CompetencyIQ 🧠
+
+AI-powered competency assessment and skill development platform.
+
+## 🚀 About
+
+CompetencyIQ helps students assess their skills, identify competency gaps, and discover personalized learning pathways.
+
+## ✨ Features
+
+- AI-powered skill assessment
+- Competency scoring
+- Skill-gap analysis
+- Personalized learning recommendations
+- Student competency dashboard
+- Secure authentication
+- Data storage using Supabase
+
+## 🛠️ Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Supabase
+- GitHub Codespaces
+
+## 📁 Project Structure
+
+```text
+CompetencyIQ/
+├── index.html
+├── style.css
+├── script.js
+└── README.mdfirst project
