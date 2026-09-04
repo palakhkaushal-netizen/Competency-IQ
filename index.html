@@ -3,17 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+
+    <title>CompetencyIQ | Smart Skill Assessment</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hello from GitHub Codespaces 🚀</h1>
-    <p>I am building my website in the cloud!</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Competency<span>IQ</span></div>
 
-    <button onclick="sayHello()">Click Me</button>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#assessment">Assessment</a>
+            <a href="#about">About</a>
+        </div>
+
+        <button class="nav-button" onclick="startAssessment()">
+            Get Started
+        </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">AI-POWERED COMPETENCY PLATFORM</p>
+
+            <h1>
+                Discover Your
+                <span>True Potential.</span>
+            </h1>
+
+            <p class="hero-text">
+                Assess your skills, identify competency gaps, and discover
+                personalized learning pathways with CompetencyIQ.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-button" onclick="startAssessment()">
+                    Start Assessment →
+                </button>
+
+                <button class="secondary-button" onclick="learnMore()">
+                    Explore Platform
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Preview -->
+        <div class="dashboard-card">
+
+            <div class="dashboard-header">
+                <div>
+                    <p class="small-text">YOUR COMPETENCY SCORE</p>
+                    <h2>78<span>/100</span></h2>
+                </div>
+
+                <div class="score-circle">
+                    78%
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Programming</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress programming"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Problem Solving</span>
+                    <span>72%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress problem-solving"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Communication</span>
+                    <span>68%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress communication"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+
+        <div class="section-heading">
+            <p class="eyebrow">WHY COMPETENCYIQ?</p>
+
+            <h2>
+                Turn Skills Into
+                <span>Opportunities.</span>
+            </h2>
+
+            <p>
+                Understand where you stand and what you need to improve.
+            </p>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>AI Skill Assessment</h3>
+                <p>
+                    Evaluate technical and soft skills through intelligent
+                    competency assessments.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Competency Analytics</h3>
+                <p>
+                    Visualize your strengths, weaknesses and competency gaps
+                    through clear analytics.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Personalized Roadmaps</h3>
+                <p>
+                    Get personalized recommendations to improve your skills
+                    and reach your career goals.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Assessment -->
+    <section id="assessment" class="assessment-section">
+
+        <div class="assessment-card">
+
+            <p class="eyebrow">READY TO BEGIN?</p>
+
+            <h2>
+                Find Your
+                <span>Competency Level.</span>
+            </h2>
+
+            <p>
+                Take an assessment and get insights into your current skill
+                profile.
+            </p>
+
+            <button class="primary-button" onclick="startAssessment()">
+                Begin Assessment →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div>
+            <p class="eyebrow">ABOUT THE PLATFORM</p>
+
+            <h2>
+                Building a
+                <span>Skill-Ready Future.</span>
+            </h2>
+        </div>
+
+        <p>
+            CompetencyIQ is designed to help students understand their
+            capabilities, identify skill gaps and make smarter decisions
+            about their learning and career development.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">Competency<span>IQ</span></div>
+
+        <p>
+            © 2026 CompetencyIQ. Built for smarter skill development.
+        </p>
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
