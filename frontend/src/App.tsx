@@ -26,7 +26,16 @@ function App() {
           }));
           return;
         }
-        return getStudentAnalytics().then(setAnalytics);
+        return getStudentAnalytics()
+          .then(setAnalytics)
+          .catch((error: Error) => {
+            setAnalytics((current) => ({
+              ...current,
+              message: error.message.includes("401")
+                ? "Sign in to load your competency details."
+                : "Unable to load competency details from the backend.",
+            }));
+          });
       })
       .catch(() => setApiStatus("API unavailable / start FastAPI on port 8000"));
   }, []);
