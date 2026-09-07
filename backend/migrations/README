@@ -1,0 +1,5 @@
+CompetencyIQ Alembic migrations.
+
+Run from backend/:
+  python -m alembic upgrade head
+  python -m alembic downgrade -1
